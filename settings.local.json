@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir)",
+      "Bash(start index.html)",
+      "Bash(node -c habsburg-data.js)",
+      "Bash(node -c script.js)",
+      "Bash(node -c family-tree.js)",
+      "Bash(node -c \"C:\\Users\\notch\\Desktop\\哈宝家谱图\\family-tree.js\")",
+      "Bash(node -c \"C:\\Users\\notch\\Desktop\\哈宝家谱图\\script.js\")",
+      "Bash(node -c \"C:\\Users\\notch\\Desktop\\哈宝家谱图\\habsburg-data.js\")",
+      "Bash(start \"C:\\Users\\notch\\Desktop\\哈宝家谱图\\index.html\")",
+      "Bash(node -c \"C:\\Users\\notch\\Desktop\\网站\\哈宝家谱图 - 副本\\family-tree.js\")",
+      "Bash(node -c \"C:\\Users\\notch\\Desktop\\网站\\哈宝家谱图 - 副本\\script.js\")",
+      "Bash(start \"C:\\Users\\notch\\Desktop\\网站\\哈宝家谱图 - 副本\\index.html\")",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:cyberaeiouhab.github.io)",
+      "Bash(dir \"C:\\Users\\notch\\Desktop\\网站\\哈宝家谱图 - 副本\")",
+      "Bash(node -c \"C:\\Users\\notch\\Desktop\\网站\\哈宝家谱图 - 副本\\habsburg-data.js\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

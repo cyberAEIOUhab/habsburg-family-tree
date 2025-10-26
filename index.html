@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哈布斯堡家族家谱图 - 欧洲最强大的王朝</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="title">哈布斯堡家族家谱图</h1>
+            <p class="subtitle">欧洲历史上最强大的王朝 (1273-1918)</p>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="#overview" class="nav-link active">概览</a></li>
+                <li><a href="#family-tree" class="nav-link">家谱图</a></li>
+                <li><a href="#branches" class="nav-link">分支王朝</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section id="overview" class="section">
+            <div class="container">
+                <h2>哈布斯堡家族概览</h2>
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <h3>统治时期</h3>
+                        <p>1273-1918年</p>
+                        <p>近650年的统治</p>
+                    </div>
+                    <div class="overview-card">
+                        <h3>著名君主</h3>
+                        <p>马克西米利安一世</p>
+                        <p>查理五世</p>
+                        <p>玛丽亚·特蕾莎</p>
+                    </div>
+                    <div class="overview-card">
+                        <h3>统治区域</h3>
+                        <p>神圣罗马帝国</p>
+                        <p>西班牙帝国</p>
+                        <p>奥地利帝国</p>
+                    </div>
+                    <div class="overview-card">
+                        <h3>家族格言</h3>
+                        <p>"让别人去打仗吧，你，幸福的奥地利，结婚吧！"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="family-tree" class="section">
+            <div class="container">
+                <h2>家谱图</h2>
+                <div class="tree-controls">
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="搜索成员..." class="search-input">
+                        <button id="search-btn" class="search-btn">搜索</button>
+                    </div>
+                    <div class="control-buttons">
+                        <button id="zoom-in" class="control-btn">放大</button>
+                        <button id="zoom-out" class="control-btn">缩小</button>
+                        <button id="reset-view" class="control-btn">重置</button>
+                        <button id="toggle-details" class="control-btn">显示详情</button>
+                        <button id="toggle-spouses" class="control-btn">显示配偶</button>
+                    </div>
+                </div>
+                <div class="tree-container">
+                    <div class="corner-decoration top-left"></div>
+                    <div class="corner-decoration top-right"></div>
+                    <div class="corner-decoration bottom-left"></div>
+                    <div class="corner-decoration bottom-right"></div>
+                    <div id="family-tree-canvas"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="branches" class="section">
+            <div class="container">
+                <h2>分支王朝</h2>
+                <div class="branches-content">
+                    <div class="branch-card">
+                        <h3>奥地利哈布斯堡王朝</h3>
+                        <p><strong>统治时期:</strong> 1273-1918年</p>
+                        <p><strong>核心领土:</strong> 奥地利、匈牙利、波希米亚、克罗地亚</p>
+                        <p><strong>重要成就:</strong> 统治神圣罗马帝国近400年，建立了奥匈帝国</p>
+                        <p><strong>著名君主:</strong> 鲁道夫一世、马克西米利安一世、玛丽亚·特蕾莎、弗朗茨·约瑟夫一世</p>
+                    </div>
+                    <div class="branch-card">
+                        <h3>西班牙哈布斯堡王朝</h3>
+                        <p><strong>统治时期:</strong> 1516-1700年</p>
+                        <p><strong>核心领土:</strong> 西班牙、尼德兰、美洲殖民地、菲律宾</p>
+                        <p><strong>重要成就:</strong> 建立了第一个"日不落帝国"，推动了大航海时代</p>
+                        <p><strong>著名君主:</strong> 查理五世、腓力二世、腓力四世</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 哈布斯堡家族家谱图 - 历史研究项目</p>
+            <p>数据来源：历史文献和学术研究</p>
+        </div>
+    </footer>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="./habsburg-data.js"></script>
+    <script src="./family-tree.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
